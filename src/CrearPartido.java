@@ -93,7 +93,7 @@ public class CrearPartido extends javax.swing.JFrame
     }//GEN-LAST:event_bAgregarPartidoActionPerformed
 /**
  * 
- * @param evt agregar partido a la accion
+ * @param evt agregar partido a la accion a
  */
     private void tPartidoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tPartidoKeyPressed
         if( evt.getKeyCode() == KeyEvent.VK_ENTER )
