@@ -10,14 +10,18 @@ import javax.swing.WindowConstants;
  */
 
 public class Apuesta extends javax.swing.JFrame {
-
+/**
+ * Apuesta para el partido
+ */
    
     public Apuesta() 
     {
         initComponents();
         this.setResizable(Boolean.FALSE);
     }
-
+/**
+ * Apuesta creada
+ */
    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -133,7 +137,10 @@ public class Apuesta extends javax.swing.JFrame {
     private void bEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bEliminarActionPerformed
         borraPartido(listaQuiniela.getSelectedIndex());
     }//GEN-LAST:event_bEliminarActionPerformed
-
+/**
+ * 
+ * @param evt resetear accion apuesta 
+ */
     private void bResetearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bResetearActionPerformed
         DefaultListModel modelovacio = new DefaultListModel();
         this.listaQuiniela.setModel(modelovacio);
@@ -145,7 +152,10 @@ public class Apuesta extends javax.swing.JFrame {
     {
         return (int)Math.floor((Math.random()*(n2-n1+1) + n1));
     }
-    
+ /**
+  * 
+  * @param evt cualquie partido 
+  */  
     private void bRealizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRealizarActionPerformed
         DefaultListModel modeloquinielaresuelta = new DefaultListModel();
 
@@ -171,7 +181,10 @@ public class Apuesta extends javax.swing.JFrame {
 
         this.listaResultados.setModel(modeloquinielaresuelta);
     }//GEN-LAST:event_bRealizarActionPerformed
-
+/**
+ * 
+ * @param partido partido al que vamos a realizar la apuesta 
+ */
     
     public void partidoNuevo(String partido)
     {
@@ -185,7 +198,10 @@ public class Apuesta extends javax.swing.JFrame {
 
         this.listaQuiniela.setModel(modelonuevo);
     }
-    
+/**
+ * 
+ * @param indice borrar partido dce apuesta realizada
+ */
   
     public void borraPartido(int indice)
     {
@@ -212,7 +228,10 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modelonuevoresultados);
     }
     
-   
+/**
+ * 
+ * @param args resultado partido 
+ */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
